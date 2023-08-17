@@ -5,6 +5,13 @@ public:
     virtual void show(){};
 };
 
+class AJiami : public Component {
+public:
+    void show() {
+        std::cout << "is a jiami" << std::endl;
+    }
+};
+
 class Decorator : public Component {
 private:
     Component* comp;
@@ -15,13 +22,6 @@ public:
 
     void show() {
         comp->show();
-    }
-};
-
-class AJiami : public Component {
-public:
-    void show() {
-        std::cout << "is a jiami" << std::endl;
     }
 };
 
